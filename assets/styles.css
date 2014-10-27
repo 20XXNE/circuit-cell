@@ -2,5 +2,11 @@
     width: 1200px;
 }
 #lessons{
-    background-color: #be3b3b;
+    background-color: #BE3B3B;
+}
+#tutorials{
+    background-color: #EE984A;
+}
+#quizzes{
+    background-color: #5B7A8C;
 }
