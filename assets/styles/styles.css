@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: anitaliased;
+    color: #FFFFFF;
+}
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('./assets/fonts/SourceSansPro-Regular.ttf')
+}
+
+@font-face{
+    font-family: "Contrail One";
+    src: url('../fonts/ContrailOne-Regular.ttf');
+}
+
+header{
+    background-color: #F4E7DD;
+    text-align: center;
+}
+
+#logo{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+}
+footer{
+    background-color: #BE3B3B;
+}
+
+div{
+    overflow: hidden;
+}
+
+h2{
+    margin: 0;
+    font-family: "Contrail One";
+}
+
+h3{
+    margin: 0;
+    font-family: "Contrail One";
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    text-align: center;
+}
+
+li a{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    font-family: "Contrail One";
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+nav{
+    min-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #5B7A8C;
+    padding: 0;
+}
+
+.container{
+    width: 1200px;
+}
+
+.main-sections h2{
+    text-align: center;
+    font-size: 3em;
+}
+
+.content-circle{
+    text-align: center;
+    min-width: 33%; /* dont know if this is considered harmful */
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.content-circle h3{
+    font-size: 2em;
+}
+
+#lessons{
+    background-color: #BE3B3B;
+}
+
+#tutorials{
+    background-color: #EE984A;
+}
+
+#quizzes{
+    background-color: #5B7A8C;
+}
+

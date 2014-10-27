@@ -9,22 +9,25 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="assets/scroll.js"></script>
-    <link href="assets/normalize.css" rel="stylesheet"/>
-    <link href="assets/styles.css" rel="stylesheet"/>
+    <script src="assets/scripts/scroll.js"></script>
+    <link href="assets/styles/normalize.css" rel="stylesheet"/>
+    <link href="assets/styles/styles.css" rel="stylesheet"/>
+    <link href="assets/styles/mediaqueries.css" rel="stylesheet"/>
 </head>
 <body>
-    <header></header>
+    <header>
+        <img id="logo" src="assets/img/logo.png">
+    </header>
         <nav class="top-nav">
             <ul>            
                 <li><a href="#lessons">LESSONS</a></li>
                 <li><a href="#tutorials">TUTORIALS</a></li>
                 <li><a href="#quizzes">QUIZZES</a></li>
-                <li>ABOUT</li>
+                <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
         <main>
-            <section  id="lessons">
+            <div class="main-sections" id="lessons">
                 <h2>Step 1: Pick a lesson</h2>
                 <div class="content-circle">
                     <div class=".clip-circle">
@@ -32,7 +35,6 @@
                     </div>
                     <h3>Circuits</h3>
                 </div>
-            </section>
                 <div class="content-circle">
                     <div class=".clip-circle">
 
@@ -41,11 +43,11 @@
                 </div>
                 <div class="content-circle">
                     <div class=".clip-circle">
-
                     </div>
                     <h3>Electricity</h3>
                 </div>
-            <section id="tutorials">
+            </div>
+            <div class="main-sections" id="tutorials">
                 <h2>Step 2: Try the tutorial</h2>
                 <div class="content-circle">
                     <div class=".clip-circle">
@@ -65,8 +67,8 @@
                     </div>
                     <h3>Electricity</h3>
                 </div>
-            </section>
-            <section id="quizzes">
+            </div>
+            <div class="main-sections" id="quizzes">
                 <h2>Step 3: Take the quiz</h2>
                 <div class="content-circle">
                     <div class=".clip-circle">
@@ -86,7 +88,9 @@
                     </div>
                     <h3>Electricity</h3>
                 </div>
-            </section>
-        </main>  
+            </div>
+        </main>
+        <footer>
+        </footer>
 </body>
 </html>
