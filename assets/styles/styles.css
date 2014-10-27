@@ -3,6 +3,7 @@ body {
     padding: 0;
     -webkit-font-smoothing: anitaliased;
     color: #FFFFFF;
+    font-family: "Contrail One";
 }
 
 @font-face{
@@ -27,6 +28,12 @@ header{
 }
 footer{
     background-color: #BE3B3B;
+    margin: 0;
+    padding: 0;
+}
+
+footer > p{
+    text-align: left;
 }
 
 div{
@@ -80,6 +87,11 @@ nav{
     font-size: 3em;
 }
 
+.main-sections p{
+    width: 50%;
+    margin: 0 auto;
+}
+
 .content-circle{
     text-align: center;
     min-width: 33%; /* dont know if this is considered harmful */
@@ -91,15 +103,15 @@ nav{
     font-size: 2em;
 }
 
-#lessons{
+.first{
     background-color: #BE3B3B;
 }
 
-#tutorials{
+.second{
     background-color: #EE984A;
 }
 
-#quizzes{
+.third{
     background-color: #5B7A8C;
 }
 
