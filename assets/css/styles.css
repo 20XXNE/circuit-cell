@@ -6,6 +6,10 @@ body {
     font-family: "Contrail One";
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 @font-face{
     font-family: "Source Sans Pro";
     src: url('./assets/fonts/SourceSansPro-Regular.ttf')
@@ -82,6 +86,10 @@ nav{
     width: 1200px;
 }
 
+.main-sections{
+    padding: 15px;
+}
+
 .main-sections h2{
     text-align: center;
     font-size: 3em;
@@ -115,3 +123,6 @@ nav{
     background-color: #5B7A8C;
 }
 
+.text-center{
+    text-align: center;
+}

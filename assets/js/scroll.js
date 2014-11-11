@@ -14,6 +14,5 @@ jQuery(function ($) {
                 }
             }
         });
-        $("nav").naver();
     });
 });
