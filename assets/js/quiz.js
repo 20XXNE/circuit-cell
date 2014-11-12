@@ -1,3 +1,22 @@
+var totalCorrect = 0,
+    check;
+
+
+/* may end up using this
+var magnets = [];
+magnets[0] = {
+    q: "How are magnetic fields created?",
+    a1: "electrons flow in different directions.", 
+    a2: "electrons flow from the north pole to the south pole.",         a3: "electrons flow like an ocean.", 
+    a4: "magnet electrons have different qualities than normal materials.",
+    an: "a1"
+}
+
+magnets[1] = {
+    q: "Which one is a magnet?",
+
+}
+*/
 //magnets
 var questions_magnets = [];
 questions_magnets[0] = "How are magnetic fields created?";
@@ -53,22 +72,37 @@ correct_circuits[1] = 1;
 correct_circuits[2] = 0;
 correct_circuits[3] = 3;
 correct_circuits[4] = 2;
-var totalCorrect = 0;
-function questionCheck(radio, subject, quesNum){
-    var radioGroup = document.getElementsByName(radio), i;
-    for (i = 0; i < radioGroup.length; ++i) {
-            if (radio[i].checked == true) {
-                var answer = radio[i].value;
-                console.log(answer);
+
+function checkAnswer(name){
+    var buttons = document.getElementsByName(name);
+    for(var i = 0; i < buttons.length; ++i){
+        check = buttons[i];
+        if (check.checked){
+            if (check.value == "correct"){
+                ++totalCorrect;
+                check.innerHTML = "Correct!";
+                console.log(totalCorrect);
+                //alert("correct");
             }
-        //break;
+            else{
+            //alert("incorrect");
+            }
+        }
+        
     }
-    if (answer == subject[quesNum]){
-        //jquery...
-        totalCorrect++;
-        console.log(totalCorrect);
+}
+
+function submit(q1, q2, q3, q4, q5){
+    checkAnswer(q1);
+    checkAnswer(q2);
+    checkAnswer(q3);
+    checkAnswer(q4);
+    checkAnswer(q5);
+    document.getElementById("result").innerHTML = "You got " + totalCorrect + "/5 correct.";
+    if (totalCorrect >= 3){
+        document.getElementById("pass-fail").innerHTML = "You passed the quiz!";
     }
-    else {
-        //jquery
+    else{
+        document.getElementById("pass-fail").innerHTML = "You failed the quiz! Try again later!";
     }
 }

@@ -12,7 +12,7 @@ body {
 
 @font-face{
     font-family: "Source Sans Pro";
-    src: url('./assets/fonts/SourceSansPro-Regular.ttf')
+    src: url('../fonts/SourceSansPro-Regular.ttf')
 }
 
 @font-face{
@@ -23,6 +23,30 @@ body {
 header{
     background-color: #F4E7DD;
     text-align: center;
+    margin-top: 45px;
+}
+
+#mobile-nav{
+	width: 100%;
+	height: 45px;
+	overflow: hidden;
+	margin: 0;
+	background-color: #34302D;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.panel {
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}
+
+.wrap { 
+  position: relative; 
+  max-width: 100%;
+  margin: auto;
 }
 
 #logo{
@@ -47,9 +71,11 @@ div{
 h2{
     margin: 0;
     font-family: "Contrail One";
+    font-size: 3em;
 }
 
 h3{
+    font-size: 2em;
     margin: 0;
     font-family: "Contrail One";
 }
@@ -88,11 +114,7 @@ nav{
 
 .main-sections{
     padding: 15px;
-}
-
-.main-sections h2{
     text-align: center;
-    font-size: 3em;
 }
 
 .main-sections p{
@@ -126,3 +148,31 @@ nav{
 .text-center{
     text-align: center;
 }
+
+/* quiz styles */
+
+#submit{
+    border: none;
+    border-radius: 10%;
+    background-color: #34302D;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#submit:hover{
+    color: #34302D;
+    background-color: #FFFFFF;
+}
+.answers{
+    display: block;
+    margin: 0 auto;
+    width: 375px;
+}
+
+.answers label{
+    padding-top: 10px;
+}
+
+#result, #pass-fail{
+    margin-top: 10px;
+}
+
