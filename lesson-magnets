@@ -28,22 +28,15 @@
             </ul>
         </nav>
         <main>
-            <section class="main-sections first">
-                <h2>THE PURPOSE OF CIRCUIT CELL</h2>
-                <p>Driving Question: “How can we introduce advanced subtopics of physical science to 5th graders in a way that generates more interest?”<br>
-                <p>Circuit Cell is designed to educate 5th graders about physical science; in a more specific sense, magnets, circuits, and electricity; through a fun and interactive website.</p>
+            <section class="main-sections first lessons">
+                <h2>MAGNETISM</h2>
+                <p>MAGNETISM is an invisible force caused by unique qualities of certain materials.  The molecules in a magnet make all their electrons move in one direction; normally, electrons move in all directions.</p>
+            </section>
+            <section class="main-sections second lessons clearfix">
+                <h2>MAGNETIC FIELDS</h2>
+                <p>MAGNETIC FIELDS are created when electrons flow from the North Pole to the South Pole.  If you have two magnets and try to connect the south poles, it won't work.  The same goes for connecting the north poles; only the north and south are attracted to each other.</p>
             </section>
             <section class="main-sections second">
-                <h2>THE PEOPLE BEHIND IT</h2>
-                <p>lA strong coder and a talented designer, this duo
-makes a fearsome team that cannot be stopped.  Their lovable dog friend is their adorable mascot./p>
-            </section>
-            <div class="main-sections third">
-                <h2>Thanks for supporting us!</h2>
-            </section>
-        </main>
-        <footer>
-            <p>C2014 CIRCUIT CELL</p>
-        </footer>
-</body>
-</html>
+                <h3>MAGNETS are most commonly made of IRON and STEEL.</h3>
+                <h3>Some examples include:</h3>
+            

@@ -10,6 +10,14 @@ body {
   width: device-width;
 }
 
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
 @font-face{
     font-family: "Source Sans Pro";
     src: url('../fonts/SourceSansPro-Regular.ttf')
@@ -107,6 +115,8 @@ nav{
     background-color: #5B7A8C;
     padding: 0;
 }
+
+/* main content */
 
 .container{
     width: 1200px;

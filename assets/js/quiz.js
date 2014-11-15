@@ -105,4 +105,5 @@ function submit(q1, q2, q3, q4, q5){
     else{
         document.getElementById("pass-fail").innerHTML = "You failed the quiz! Try again later!";
     }
+    totalCorrect = 0;
 }
