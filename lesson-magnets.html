@@ -13,6 +13,8 @@
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bigslide.js"></script>
     <script src="assets/js/plugins.js"></script>
+    <script src="assets/libraries/slick/slick.js"></script>
+    <link href="assets/libraries/slick/slick.css"/>
     <link href="assets/css/normalize.css" rel="stylesheet"/>
     <link href="assets/css/styles.css" rel="stylesheet"/>
     <link href="assets/css/mediaqueries.css" rel="stylesheet"/>
@@ -54,20 +56,15 @@
             <section class="main-sections third">
                 <h3>MAGNETS are most commonly made of IRON and STEEL.</h3>
                 <h3>Some examples include:</h3>
-                <div id="slidr-div">
-                    <div data-slidr="one">
-                        <figure>
-                            <div id="image-one" class="magnets"></div>
-                            <figcaption>Compass</figcaption>
-                        </figure>
+                <div class="slick-slides">
+                    <div id="image-one" class="magnets">
+                        <img src="assets/img/earth.png">
                     </div>
-                    <div data-slidr="two">
-                        <figure>
-                            <div id="image-one" class="magnets"></div>
-                            <figcaption>Earth</figcaption>
-                        </figure>
+                    <div id="image-two" class="magnets">
+                        <img src="assets/img/compass.png">
                     </div>
                 </div>
+                
             </section>
         </main>
 </body>
