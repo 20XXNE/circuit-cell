@@ -10,12 +10,9 @@
     <meta name="author" content="Cristian Ramirez & Andrea Galvan">
     <link rel="author" href="humans.txt"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bigslide.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('.menu-link').bigSlide();
-    });
-    </script>
+    <script src="assets/js/plugins.js"></script>
     <link href="assets/css/normalize.css" rel="stylesheet"/>
     <link href="assets/css/styles.css" rel="stylesheet"/>
     <link href="assets/css/mediaqueries.css" rel="stylesheet"/>
@@ -29,19 +26,14 @@
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
-    <div class="wrap push">
-        
-        
+    <div class="wrap push">   
     <header>
-            <a href="index.html"><img id="logo" src="assets/img/logo.png"></a>
+         <a href="index.html"><div id="logo"></div></a>
     </header>
     <div class="push" id="mobile-nav">
         <a href="#menu" class="menu-link">☰</a>
         
     </div>
-    <!--
-    
-    -->
     <nav class="top-nav">
         <ul>            
             <li><a href="#lessons">LESSONS</a></li>
@@ -118,6 +110,7 @@
             <p>C2014 CIRCUIT CELL</p>
         </footer>
         
+            </div>
         </div>
 </body>
 </html>

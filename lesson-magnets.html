@@ -10,16 +10,15 @@
     <meta name="author" content="Cristian Ramirez & Andrea Galvan">
     <link rel="author" href="humans.txt"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="assets/scripts/bigslide.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bigslide.js"></script>
+    <script src="assets/js/plugins.js"></script>
     <link href="assets/css/normalize.css" rel="stylesheet"/>
     <link href="assets/css/styles.css" rel="stylesheet"/>
     <link href="assets/css/mediaqueries.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img id="logo" src="assets/img/logo.png"></a>
-    </header>
-        <nav class="top-nav">
+        <nav id="menu" class="panel" role="navigation">
             <ul>            
                 <li><a href="lessons.html">LESSONS</a></li>
                 <li><a href="tutorials.html">TUTORIALS</a></li>
@@ -27,7 +26,23 @@
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
-        <main>
+    <div class="wrap push">   
+    <header>
+         <a href="index.html"><div id="logo"></div></a>
+    </header>
+    <div class="push" id="mobile-nav">
+        <a href="#menu" class="menu-link">☰</a>
+        
+    </div>
+    <nav class="top-nav">
+        <ul>            
+            <li><a href="#lessons">LESSONS</a></li>
+            <li><a href="#tutorials">TUTORIALS</a></li>
+            <li><a href="#quizzes">QUIZZES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <main>
             <section class="main-sections first lessons">
                 <h2>MAGNETISM</h2>
                 <p>MAGNETISM is an invisible force caused by unique qualities of certain materials.  The molecules in a magnet make all their electrons move in one direction; normally, electrons move in all directions.</p>
@@ -36,7 +51,24 @@
                 <h2>MAGNETIC FIELDS</h2>
                 <p>MAGNETIC FIELDS are created when electrons flow from the North Pole to the South Pole.  If you have two magnets and try to connect the south poles, it won't work.  The same goes for connecting the north poles; only the north and south are attracted to each other.</p>
             </section>
-            <section class="main-sections second">
+            <section class="main-sections third">
                 <h3>MAGNETS are most commonly made of IRON and STEEL.</h3>
                 <h3>Some examples include:</h3>
-            
+                <div id="slidr-div">
+                    <div data-slidr="one">
+                        <figure>
+                            <div id="image-one" class="magnets"></div>
+                            <figcaption>Compass</figcaption>
+                        </figure>
+                    </div>
+                    <div data-slidr="two">
+                        <figure>
+                            <div id="image-one" class="magnets"></div>
+                            <figcaption>Earth</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+</html>
