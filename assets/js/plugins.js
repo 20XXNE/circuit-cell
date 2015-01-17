@@ -16,4 +16,5 @@ $(document).ready(function() {
         touch: true,
         transition: 'fade'
     }).start();*/
+
 });
