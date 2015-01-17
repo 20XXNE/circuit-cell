@@ -9,25 +9,19 @@
     <meta name="description" content="Circuit Cell is an interactive educational website whose sole purpose it to teach elementary school students about circuits, magnetism, and elecricity.">
     <meta name="author" content="Cristian Ramirez & Andrea Galvan">
     <link rel="author" href="humans.txt"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bigslide.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/libraries/slick/slick.js"></script>
-    <link href="assets/libraries/slick/slick.css"/>
     <link href="assets/css/normalize.css" rel="stylesheet"/>
     <link href="assets/css/styles.css" rel="stylesheet"/>
     <link href="assets/css/mediaqueries.css" rel="stylesheet"/>
 </head>
 <body>
-        <nav id="menu" class="panel" role="navigation">
-            <ul>            
-                <li><a href="lessons.html">LESSONS</a></li>
-                <li><a href="tutorials.html">TUTORIALS</a></li>
-                <li><a href="quizzes.html">QUIZZES</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-            </ul>
-        </nav>
+    <nav id="menu" class="panel" role="navigation">
+        <ul>            
+            <li><a href="lessons.html">LESSONS</a></li>
+            <li><a href="tutorials.html">TUTORIALS</a></li>
+            <li><a href="quizzes.html">QUIZZES</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
     <div class="wrap push">   
     <header>
          <a href="index.html"><div id="logo"></div></a>
@@ -45,27 +39,29 @@
         </ul>
     </nav>
     <main>
-            <section class="main-sections first lessons">
-                <h2>MAGNETISM</h2>
-                <p>MAGNETISM is an invisible force caused by unique qualities of certain materials.  The molecules in a magnet make all their electrons move in one direction; normally, electrons move in all directions.</p>
-            </section>
-            <section class="main-sections second lessons clearfix">
-                <h2>MAGNETIC FIELDS</h2>
-                <p>MAGNETIC FIELDS are created when electrons flow from the North Pole to the South Pole.  If you have two magnets and try to connect the south poles, it won't work.  The same goes for connecting the north poles; only the north and south are attracted to each other.</p>
-            </section>
-            <section class="main-sections third">
-                <h3>MAGNETS are most commonly made of IRON and STEEL.</h3>
-                <h3>Some examples include:</h3>
-                <div class="slick-slides">
-                    <div id="image-one" class="magnets">
-                        <img src="assets/img/earth.png">
-                    </div>
-                    <div id="image-two" class="magnets">
-                        <img src="assets/img/compass.png">
-                    </div>
-                </div>
-                
-            </section>
-        </main>
+        <section class="main-sections first lessons">
+            <h2>MAGNETISM</h2>
+            <p>MAGNETISM is an invisible force caused by unique qualities of certain materials.  The molecules in a magnet make all their electrons move in one direction; normally, electrons move in all directions.</p>
+        </section>
+        <section class="main-sections second lessons clearfix">
+            <h2>MAGNETIC FIELDS</h2>
+            <p>MAGNETIC FIELDS are created when electrons flow from the North Pole to the South Pole.  If you have two magnets and try to connect the south poles, it won't work.  The same goes for connecting the north poles; only the north and south are attracted to each other.</p>
+        </section>
+        <section class="main-sections third">
+            <h3>MAGNETS are most commonly made of IRON and STEEL.</h3>
+            <h3>Some examples include:</h3>
+            <div id="slidr-img" class="slidr">
+                <img src="assets/img/earth.png">
+                <img src="assets/img/compass.png">
+                <img src="assets/img/discmagnet.png">
+                <img src="assets/img/horseshoemagnet.png">
+                <img src="assets/img/fridge.png">
+            </div>    
+        </section>
+    </main>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="assets/js/bigslide.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/slidr.js"></script>    
 </body>
 </html>
